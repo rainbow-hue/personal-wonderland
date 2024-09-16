@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link Google Fonts for Source Code Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Full-screen terminal window container -->
+    <div id="terminal">
+        <!-- Terminal header with buttons -->
+        <div id="terminal-header">
+            <div class="window-controls">
+                <div class="terminal-button close-btn"></div>
+                <div class="terminal-button minimize-btn"></div>
+                <div class="terminal-button maximize-btn"></div>
+            </div>
+            <!-- Navigation links (text only, no buttons) -->
+            <div class="nav-links">
+                <a href="#" onclick="goTo('home')">Home</a>
+                <a href="#" onclick="goTo('resume')">Resume</a>
+                <a href="#" onclick="goTo('projects')">Projects</a>
+                <a href="#" onclick="goTo('about')">About</a>
+            </div>
+        </div>
+        <!-- Terminal output area -->
+        <pre id="output">shell@127.0.0.1:~$ <span class="cursor"></span></pre>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
